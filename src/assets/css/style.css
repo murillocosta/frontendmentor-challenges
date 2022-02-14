@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+    max-width: 375px;
+    font-family: 'Poppins', sans-serif;
+    background: url("./../images/bg-intro-mobile.png");
+    background-color: hsl(0, 100%, 74%);
+    color: white;
+    font-size: 16px;
+}
+
+header {
+    margin-top: 2rem;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+div {
+    background-color: hsl(248, 32%, 49%);
+}
