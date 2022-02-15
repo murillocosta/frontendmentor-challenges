@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 body {
+    display: flex;
+    flex-direction: column;
     max-width: 375px;
     font-family: 'Poppins', sans-serif;
-    background: url("./../images/bg-intro-mobile.png");
+    background-image: url("./../images/bg-intro-mobile.png");
     background-color: hsl(0, 100%, 74%);
     color: white;
     font-size: 16px;
+    margin: auto;
 }
 
 header {
@@ -15,6 +18,68 @@ header {
     padding: 1.5rem;
 }
 
-div {
+.tryit {
     background-color: hsl(248, 32%, 49%);
+    padding: 1.25rem 4.375rem;
+    text-align: center;
+    border-radius: 0.625rem;
+    box-shadow: 0rem 0.438rem 0.125rem rgba(0, 0, 0, 0.205);
+}
+
+.formulario {
+    background-color: white;
+    margin-top: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0rem 0.438rem 0.125rem rgba(0, 0, 0, 0.205);
+    padding: 2.2rem;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+input {
+    width: auto;
+    height: 3.5rem;
+    border-radius: 0.313rem;
+    border: 1px solid hsl(246, 25%, 77%);
+    padding: 0.188rem 0.188rem 0.188rem 1.25rem;
+    font-weight: 700;
+    color: hsl(249, 10%, 26%);
+    font-size: 1rem;
+}
+
+.submit {
+    background-color: hsl(154, 59%, 51%);
+    box-shadow: 0rem 0.438rem 0.125rem #55B78D;
+    border: transparent;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.08rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.199);
+}
+
+.rodape {
+    text-align: center;
+    color: hsl(246, 25%, 77%);
+    font-size: 0.85rem;
+
+}
+
+a {
+    color: hsl(0, 100%, 74%);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }
