@@ -24,6 +24,7 @@ header {
     text-align: center;
     border-radius: 0.625rem;
     box-shadow: 0rem 0.438rem 0.125rem rgba(0, 0, 0, 0.205);
+    cursor: pointer;
 }
 
 .formulario {
@@ -50,7 +51,10 @@ input {
     font-weight: 700;
     color: hsl(249, 10%, 26%);
     font-size: 1rem;
+    outline: none;
 }
+
+
 
 .submit {
     background-color: hsl(154, 59%, 51%);
@@ -60,6 +64,7 @@ input {
     text-transform: uppercase;
     letter-spacing: 0.08rem;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.199);
+    cursor: pointer;
 }
 
 .rodape {
@@ -75,6 +80,7 @@ a {
     font-weight: bold;
 }
 
+
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -82,4 +88,30 @@ a {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 968px) {
+    body {
+        max-width: 1440px;
+    }
+    .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 4rem;
+        }
+    
+        header {
+            font-size: 1.3rem;
+            max-width: 35%;
+            text-align: center;
+        }
+
+        .texto1 {
+            font-size: 1rem;
+        }
+
+        footer {
+            margin-top: 4rem;
+        }
 }
