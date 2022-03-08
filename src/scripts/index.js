@@ -20,6 +20,8 @@ function validar () {
     let lastName = document.getElementById("lastName");
     let email = document.getElementById('emailAdress');
     let password = document.getElementById('password');
+    
+    
     if(firstName.value == '') {    
     textName.innerHTML = 'First Name cannot be empty.'
     firstName.style.border = '2px solid #f0787a';
@@ -34,7 +36,10 @@ function validar () {
         textEmail.innerHTML = "Looks like this is not an email."  
         email.style.border = '2px solid #f0787a';
         email.style.background = "url('src/assets/images/icon-error.svg') no-repeat content-box right";
-     }
+        // email.placeholder = "email@example/com";
+        email.value = 'email@example/com';
+        
+}
      
     if (password.value == '') {
         textPassword.innerHTML = "Password cannot be empty."
