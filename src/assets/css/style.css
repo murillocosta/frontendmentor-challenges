@@ -6,7 +6,7 @@ body {
     max-width: 375px;
     font-family: 'Poppins', sans-serif;
     background-image: url("./../images/bg-intro-mobile.png");
-    background-color: hsl(0, 100%, 74%);
+    background-color: rgb(255, 122, 122);
     color: white;
     font-size: 16px;
     margin: auto;
@@ -42,6 +42,20 @@ form {
     gap: 1.3rem;
 }
 
+.textform {
+    display: flex;
+    color: #F0787A;
+    font-size: 0.65rem;
+    font-weight: bold;
+    font-style: italic;
+    justify-content: flex-end;
+    margin-top: -0.625rem;
+}
+
+.material-icons-outlined {
+    color: #F0787A;
+}
+
 input {
     width: auto;
     height: 3.5rem;
@@ -52,9 +66,8 @@ input {
     color: hsl(249, 10%, 26%);
     font-size: 1rem;
     outline: none;
+    
 }
-
-
 
 .submit {
     background-color: hsl(154, 59%, 51%);

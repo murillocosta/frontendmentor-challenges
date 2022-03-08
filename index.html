@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intro component with sign-up form challenge hub</title>
     <link rel="stylesheet" href="./src/assets/css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 
 <body>
@@ -20,13 +21,16 @@
         <main>
             <section class="tryit"><strong>Try it free 7 days</strong> then $20/mo. thereafter</section>
             <section class="formulario">
-                <form>
+                <form action="#" onsubmit="validar()">
                     <input type="text" placeholder="First Name" id="firstName">
-                    <span style="color: black;" id="errorName"></span>
+                    <span class= 'textform' id="textName"></span>
                     <input type="text" placeholder="Last Name" id="lastName">
+                    <span class= 'textform' id="textLastName"></span>
                     <input type="email" placeholder="Email Address" id="emailAdress">
+                    <span class= 'textform' id="textEmail"></span>
                     <input type="password" placeholder="Password" id="password">
-                    <input type="submit" value="Claim your free trial" class="submit" onclick="submit()"></input>
+                    <span class= 'textform' id="textPassword"></span>
+                    <input type="submit" value="Claim your free trial" class="submit"></input>
 
                 </form>
                 <p class="rodape">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a>.

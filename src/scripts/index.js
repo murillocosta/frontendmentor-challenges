@@ -15,3 +15,32 @@ function submit() {
 }
 }
 
+function validar () {
+    let firstName = document.getElementById("firstName");
+    let lastName = document.getElementById("lastName");
+    let email = document.getElementById('emailAdress');
+    let password = document.getElementById('password');
+    if(firstName.value == '') {    
+    textName.innerHTML = 'First Name cannot be empty.'
+    firstName.style.border = '2px solid #f0787a';
+    firstName.style.background = "url('src/assets/images/icon-error.svg') no-repeat content-box right";
+}
+    if (lastName.value == '') {
+      textLastName.innerHTML = "Last Name cannot be empty."  
+      lastName.style.border = '2px solid #f0787a';
+      lastName.style.background = "url('src/assets/images/icon-error.svg') no-repeat content-box right";
+    }
+    if (email.value == '') {
+        textEmail.innerHTML = "Looks like this is not an email."  
+        email.style.border = '2px solid #f0787a';
+        email.style.background = "url('src/assets/images/icon-error.svg') no-repeat content-box right";
+     }
+     
+    if (password.value == '') {
+        textPassword.innerHTML = "Password cannot be empty."
+        password.style.border = '2px solid #f0787a';
+        password.style.background = "url('src/assets/images/icon-error.svg') no-repeat content-box right";
+    }
+
+    
+}
